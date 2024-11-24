@@ -1,0 +1,116 @@
+<!DOCTYPE html><html lang="en"><head>
+    <title>Essential JS 2 for ListView </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Essential JS 2 for ListView UI Control">
+    <meta name="author" content="Syncfusion">
+    <link href="index.css" rel="stylesheet">
+    <link href="https://cdn.syncfusion.com/ej2/26.2.4/ej2-base/styles/material-dark.css" rel="stylesheet">
+    <link href="https://cdn.syncfusion.com/ej2/26.2.4/ej2-lists/styles/material-dark.css" rel="stylesheet">
+    <link href="https://cdn.syncfusion.com/ej2/26.2.4/ej2-layouts/styles/material-dark.css" rel="stylesheet">
+    
+    
+<script src="https://cdn.syncfusion.com/ej2/26.2.4/dist/ej2.min.js" type="text/javascript"></script>
+<script src="https://cdn.syncfusion.com/ej2/syncfusion-helper.js" type ="text/javascript"></script>
+    <style>
+    div.fixed {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 98%;
+  
+  border: 2px solid grey;
+}
+  div.fixed2 {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 99%;
+  height: 50px;
+  border: 2px solid #2e2e2e;
+    
+}
+  
+  .ncontainer {  
+    display: flex;  
+    flex-direction: column;  
+     padding: 28px;
+    border: 0.8px solid grey;
+    border-radius: 80px;
+    border-top:40px solid grey;
+    background-color: transparent;
+    
+    margin:14px;
+    margin-left:0px;
+    margin-right:5px;
+    color: grey;
+    font-size: 14px;
+    
+    /*Other styles here...*/
+}
+    </style>  
+    
+</head>
+
+<body style="background-color: #2e2e2e;">
+       <div id="container">
+          
+      
+      
+      
+      <!-- <div style="display: flex;   flex-direction:row;border-radius: 5px; border: 6px solid #73AD21;">-->
+      <div class="ncontainer">
+        <div style="font-size:25px; margin-top : 30px"> WHAT IS THE TITLE</div>
+        </br>
+              <div>  Put some description here. Should e less than 100 words.  </div>
+           
+        </br>
+          <div>  link to project  </div>
+          
+        </br>
+         <div>Clicks : 298 </div>
+         </br>
+         <div>Status : Deactivated </div>
+        </br>
+        
+          <div>Date : 12-10-2024 </div>
+       
+        
+        <div style="display:flex; flow-direction:column; margin-bottom:5px;  position:absolute 190px;">
+          <button onclick="cl();" style="background:transparent;color:grey; margin:10px;width:45%">Activate </button>
+          <button onclick="cl();" style="background: grey;color: #2e2e2e;margin:10px;width:45%">Deactivate </button>
+          
+        </div>
+        
+        </div> 
+        
+         
+      
+      
+        <div class="col-lg-12 control-section">
+
+            <!-- ListView element -->
+            <div id="List" tabindex="1">
+            </div>
+        </div>
+          
+      </br>
+      </br>
+      </br>
+    </div>
+
+
+
+<script>
+var ele = document.getElementById('container');
+if(ele) {
+  ele.style.visibility = "visible";
+}   
+      </script>
+<script src="index.js" type="text/javascript"></script>
+</body>
+<div class="fixed2">
+        
+    </div>
+<div class="fixed">Thiigfghj </div>
+</html>
