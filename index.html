@@ -1,116 +1,86 @@
-<!DOCTYPE html><html lang="en"><head>
-    <title>Essential JS 2 for ListView </title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Essential JS 2 for ListView UI Control">
-    <meta name="author" content="Syncfusion">
-    <link href="index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/26.2.4/ej2-base/styles/material-dark.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/26.2.4/ej2-lists/styles/material-dark.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/26.2.4/ej2-layouts/styles/material-dark.css" rel="stylesheet">
-    
-    
-<script src="https://cdn.syncfusion.com/ej2/26.2.4/dist/ej2.min.js" type="text/javascript"></script>
-<script src="https://cdn.syncfusion.com/ej2/syncfusion-helper.js" type ="text/javascript"></script>
-    <style>
-    div.fixed {
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  width: 98%;
-  
-  border: 2px solid grey;
-}
-  div.fixed2 {
-  position: fixed;
-  top: 0;
-  right: 0;
-  width: 99%;
-  height: 50px;
-  border: 2px solid #2e2e2e;
-    
-}
-  
-  .ncontainer {  
-    display: flex;  
-    flex-direction: column;  
-     padding: 28px;
-    border: 0.8px solid grey;
-    border-radius: 80px;
-    border-top:40px solid grey;
-    background-color: transparent;
-    
-    margin:14px;
-    margin-left:0px;
-    margin-right:5px;
-    color: grey;
-    font-size: 14px;
-    
-    /*Other styles here...*/
-}
-    </style>  
-    
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" href="styles/style.css"/>
+  <title>Aliens And Whot</title>
 </head>
+<style>
+a {
+  display: flex; 
+  flex-direction: row;  
+     align-items: center;
+    justify-content: center;
+  text-align: center;text-decoration: none;margin:20px;
+   background: grey;color: black; border: 2px solid grey;
+  padding: 12px 0px; border-radius : 2vh; font-size: 3vh;
+}
+btn {
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 12px 30px;
+  cursor: pointer;
+  font-size: 20px;
+}
 
-<body style="background-color: #2e2e2e;">
-       <div id="container">
-          
-      
-      
-      
-      <!-- <div style="display: flex;   flex-direction:row;border-radius: 5px; border: 6px solid #73AD21;">-->
-      <div class="ncontainer">
-        <div style="font-size:25px; margin-top : 30px"> WHAT IS THE TITLE</div>
-        </br>
-              <div>  Put some description here. Should e less than 100 words.  </div>
-           
-        </br>
-          <div>  link to project  </div>
-          
-        </br>
-         <div>Clicks : 298 </div>
-         </br>
-         <div>Status : Deactivated </div>
-        </br>
-        
-          <div>Date : 12-10-2024 </div>
+/* Darker background on mouse-over 
+.btn:hover {
+  background-color: RoyalBlue;
+}*/
+</style>
+<ti style="background:black; display: flex; flex-direction: column; align-items:center; justify-content: center;">
+  
+  <img src="icon.png" style="height:25vh;width:25vh; "/>
+</ti>
+<body style="background:black; display: block; flex-direction: column; align-items:center; justify-content: center;">
+  <div style="color: grey"> 
+  <h1 style="font-size:4vh">
+    MCoin downloads page
+  </h1>
+    <p style="font-size:2vh">Click the appropriate download button if your download doesn't start aitomatically.</p>
+   <p style="font-size:2vh"> To be able to install the app you need to allow installation from unknown sources under settings.</p>
+     
+    <!--Download MC app to watch our Youtube videos or carry out some simple tasks to get rewarded with MCoins.
+    The site is still under development but for now you can always open it to earn fifty game minutes daily.
+  <p> You will always get the latest news about our progress here as well as have the chance to be among our testers or early users of our newly released versions. Stay in touch and have fun playing.     </p>-->
+      </br> 
+    <a  style="background:black; color:grey;"href="icon.png" download>Download MC app</a>
+    
+    <a  href="icon.png" download>Download AliensAndWhot</a>
+    
+   <!--  <div id="aa" style="display:block">
+       <a href="intent://aw.game#Intent;scheme=aw;package=com.awgames.aliensandwhot;S.browser_fallback_url=google.com;end">Click to get free 50 mins</a>
+    </br></br></br>
+    </div>
+    <div id="bb" style="display:block">
+     
+    <a  href="intent://aw.game#Intent;scheme=aw;package=com.awgames.aliensandwhot;S.browser_fallback_url=https://google.com;end" style=" z-index:3; margin-top:6px; background: grey; border:1px solid #2e2e2e;font-size:45px; border-radius:20px;color:#2e2e2e;width:100%; padding:10px; "> Click to get free 50 mins</a>
+    
+  </div>-->
+    </br> </br>
+    <h1> © AW Games 2025 </h1>  
+    <script>
+    function open(){window.open("intent://aw.game#Intent;scheme=aw;package=com.awgames.aliensandwhot;end","_blank");}
+    
+    const params = new Proxy(new URLSearchParams(window.location.search), {
+  get: (searchParams, prop) => searchParams.get(prop),
+});
+// Get the value of "some_key" in eg "https://example.com/?some_key=some_value"
+let val="nativ";//params.some_key; // "some_value"
+
+ if(val.includes("native"))
+    
+    document.getElementById("bb").innerHTML="";
+    else document.getElementById("aa").innerHTML="";
+    let g = "iMM2r7++.2LaM9g9vA.WaSAv+_SMuxYFwwVVVx7QQcWPWSz6/Vki.AKl84fsOjoqQnrnWTfMFv+r95lb9rr.v9",f = "",a = "1bitYD2SM85Qu4c_axJ.W6mTUnC0:gH3BeV/qLfwIGdFoXN9KOARZzhrpEl7jkvPys-+",b = "",c = "8MhX2NpotInA7LGb.5yamxfq+JSPRlEkw34TjiU6OCv9zBDe_VrK1-WsYcd:uHgFZQ0/";
+      decrypt();
+        function decrypt(){ for (let i = 0; i < g.length; i++) { f = f +(c[a.indexOf(g[i])]); }}
+
+    document.getElementById("aa").innerHTML=f;
        
-        
-        <div style="display:flex; flow-direction:column; margin-bottom:5px;  position:absolute 190px;">
-          <button onclick="cl();" style="background:transparent;color:grey; margin:10px;width:45%">Activate </button>
-          <button onclick="cl();" style="background: grey;color: #2e2e2e;margin:10px;width:45%">Deactivate </button>
-          
-        </div>
-        
-        </div> 
-        
-         
-      
-      
-        <div class="col-lg-12 control-section">
-
-            <!-- ListView element -->
-            <div id="List" tabindex="1">
-            </div>
-        </div>
-          
-      </br>
-      </br>
-      </br>
-    </div>
-
-
-
-<script>
-var ele = document.getElementById('container');
-if(ele) {
-  ele.style.visibility = "visible";
-}   
-      </script>
-<script src="index.js" type="text/javascript"></script>
-</body>
-<div class="fixed2">
-        
-    </div>
-<div class="fixed">Thiigfghj </div>
+    </script>
+  </div>
+  </body>
 </html>
